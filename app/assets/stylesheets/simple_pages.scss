@@ -1,3 +1,90 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+$font-stack:    Cambria, Big Caslon, serif;
+$primary-color: #34495e;
+$background-color: #f4f2f2;
+
+body {
+  background-color: $background-color;
+}
+
+
+#navnav {
+  background-color: $primary-color;
+}
+
+#navnav2 li a{
+  color: $background-color;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+  font-family: $font-stack;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+  /*Text in Navigation Bar*/
+}
+
+#navnav2>li>a:hover {
+  color: #99b3e6;
+}
+
+#navnav2>li.active>a, #navnav2>li.active>a:focus, #navnav2>li.active>a:hover {
+  color: $primary-color;
+  background-color: $background-color;
+}
+
+.navbar-header .navbar-toggle {
+  border-color: $background-color;
+  background-color: $primary-color;
+  color: #f4f2f2;
+}
+
+.navbar-header .navbar-toggle:hover {
+  background-color: #99b3e6;
+  color: $primary-color;
+}
+
+.img-responsive {
+  width: 600px;
+  padding: 20px 20px 0 20px;
+}
+
+.page {
+  padding: 50px 0 0 0;
+}
+
+
+h1 {
+  font: $font-stack;
+  color: $primary-color;
+  text-align: left;
+  font-size: 2em;
+  padding: 0 20px 0 20px;
+}
+
+h2 {
+  font: $font-stack;
+  color: $primary-color;
+  text-align: left;
+  font-size: 1em;
+  padding: 0 20px 0 20px;
+}
+
+p {
+  font: $font-stack;
+  color: $primary-color;
+  text-align: left;
+  font-size: 1em;
+  padding: 0 20px 0 20px;
+}
+
+footer {
+  font: $font-stack;
+  color: $primary-color;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 30px;
+}

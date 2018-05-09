@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Nameofapp</title>
+    <title>Bike Berlin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About", simple_pages_about_path %></li>
-        <li><%= link_to "Contact", simple_pages_contact_path %></li>
-      </ul>
-    </nav>
-
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid" id="navnav">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse"
+          data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div> <!--end navbar-header -->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right" id="navnav2">
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "About", simple_pages_about_path %></li>
+          <li><%= link_to "Contact", simple_pages_contact_path %></li>
+        </ul>
+      </div> <!-- end nav container-->
+    </nav> <!-- end navbar-->
 
     <%= yield %>
 
     <footer>
-      &copy; 2018 Bike Berlin
+      &copy; 2018 Bike Berlin - All rights reserved
     </footer>
 
   </body>

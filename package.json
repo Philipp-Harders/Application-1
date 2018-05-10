@@ -1,5 +1,9 @@
 {
   "name": "nameofapp",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.8.1",
+    "webpack-dev-server": "^3.1.4"
+  }
 }
